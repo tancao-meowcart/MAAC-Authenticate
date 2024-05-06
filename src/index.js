@@ -14,7 +14,7 @@ app.get('/', (req, res) => {
   const { shop } = req.query;
 
   if (!shop || (shop && shop === '')) {
-    return res.send('<h1>Please enter shop name</h1>');
+    return res.send('<h1>Please enter shop name.</h1>');
   }
 
   let shopDomain = shop;
