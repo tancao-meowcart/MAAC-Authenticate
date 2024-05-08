@@ -54,7 +54,10 @@ With the token that you have got before, you access `localhost:3000/api/test?tok
 It will show the shop detail.
 
 ### 2. Get Webhooks 'customers/create' payload and store data:
+In this session, you have to run `ngrok` to generate the callback url, then you copy the url that `ngrok` have just generated and paste it in the `src/index.js` at line 108.
+
 Access `http://localhost:3000/api/createSubscription` to generate webhooks subscription.
+
 In Shopify Admin, when you create a new customer, it will send a webhook and you will see `customer-data.json` in `src/data/customer-data.json`. This file store customer's data that you have just create.
 
 
